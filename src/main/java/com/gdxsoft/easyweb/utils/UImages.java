@@ -269,8 +269,8 @@ public class UImages {
 	 * Create the image thumbnail
 	 * 
 	 * @param imgPath   The image path and name
-	 * @param maxwidth  The maximum width
-	 * @param maxheight The maximum height
+	 * @param maxWidth  The maximum width
+	 * @param maxHeight The maximum height
 	 * @return The thumbnail image path and name
 	 */
 	public static String createSmallImage(String imgPath, int maxWidth, int maxHeight) {

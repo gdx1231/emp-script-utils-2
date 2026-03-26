@@ -268,7 +268,7 @@ public class USign {
 	 * 在Document下添加 节点
 	 * 
 	 * @param doc       Document
-	 * @param nodeName  创建的Node节点的tagName
+	 * @param tagName   创建的Node节点的tagName
 	 * @param innerText node内文字
 	 */
 	public static void addXmlNode(Document doc, String tagName, String innerText) {

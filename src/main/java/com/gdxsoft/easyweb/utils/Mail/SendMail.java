@@ -968,7 +968,7 @@ public class SendMail {
 	 * @param mm 原始邮件
 	 * @return 签名后邮件
 	 * @throws MessagingException
-	 * @throws DKIMSignerException
+	 * @throws Exception
 	 */
 	public MimeMessage dkimSign(MimeMessage mm) throws Exception {
 		String from = this.getFrom().getEmail();

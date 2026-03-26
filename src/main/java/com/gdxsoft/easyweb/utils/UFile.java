@@ -39,7 +39,7 @@ public class UFile {
 	 * Change the file creation time
 	 * 
 	 * @param filePath        the file
-	 * @param creationDate
+	 * @param creationTime    the creation time to set
 	 * @throws IOException
 	 */
 	public static void changeCreationTime(String filePath, Date creationTime) throws IOException {
@@ -49,8 +49,8 @@ public class UFile {
 	/**
 	 * Change the file modification time
 	 * 
-	 * @param filePath        the file
-	 * @param modifiedDate
+	 * @param filePath           the file
+	 * @param modificationTime   the modification time to set
 	 * @throws IOException
 	 */
 	public static void changeModificationTime(String filePath, Date modificationTime) throws IOException {

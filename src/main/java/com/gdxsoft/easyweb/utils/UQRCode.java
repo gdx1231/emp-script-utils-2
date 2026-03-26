@@ -139,8 +139,8 @@ public class UQRCode {
 	/**
 	 * 获取
 	 * 
-	 * @param md5
-	 * @param ext
+	 * @param paras  二维码内容参数
+	 * @param ext    文件扩展名
 	 * @return 二维数组，0 物理文件，1 url
 	 */
 	public static String[] getQRCodeSavedPath(String paras, String ext) {
