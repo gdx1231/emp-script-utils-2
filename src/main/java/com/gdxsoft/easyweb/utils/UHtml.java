@@ -10,6 +10,8 @@ import java.util.regex.MatchResult;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import jakarta.servlet.http.HttpServletRequest;
+
 import org.apache.commons.io.IOUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -119,7 +121,7 @@ public class UHtml {
 	 * @return the http body string(UTF8)
 	 * @throws IOException
 	 */
-	public static String getHttpBody(javax.servlet.http.HttpServletRequest request) throws IOException {
+	public static String getHttpBody(HttpServletRequest request) throws IOException {
 		return getHttpBody(request, "utf-8");
 	}
 
@@ -131,7 +133,7 @@ public class UHtml {
 	 * @return the http body string
 	 * @throws IOException
 	 */
-	public static String getHttpBody(javax.servlet.http.HttpServletRequest request, String charset) throws IOException {
+	public static String getHttpBody(HttpServletRequest request, String charset) throws IOException {
 		InputStream is = request.getInputStream();
 		return IOUtils.toString(is, charset);
 	}
@@ -156,7 +158,7 @@ public class UHtml {
 	 * @return
 	 * @throws IOException
 	 */
-	public static byte[] getHttpBodyBytes(javax.servlet.http.HttpServletRequest request) throws IOException {
+	public static byte[] getHttpBodyBytes(HttpServletRequest request) throws IOException {
 		InputStream is = request.getInputStream();
 		return IOUtils.toByteArray(is);
 	}
@@ -167,7 +169,7 @@ public class UHtml {
 	 * @param request the HttpServletRequest
 	 * @return the base url
 	 */
-	public static String getHttpBase(javax.servlet.http.HttpServletRequest request) {
+	public static String getHttpBase(HttpServletRequest request) {
 		String port = ":" + request.getServerPort();
 		String scheme = request.getHeader("x-forwarded-protocol");
 		if (scheme == null) {
@@ -198,7 +200,7 @@ public class UHtml {
 	 * @param baseAdd the path of attachment
 	 * @return the base url
 	 */
-	public static String getHttpBase(javax.servlet.http.HttpServletRequest request, String baseAdd) {
+	public static String getHttpBase(HttpServletRequest request, String baseAdd) {
 
 		String __base = getHttpBase(request);
 		if (baseAdd != null) {
