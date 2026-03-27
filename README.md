@@ -6,7 +6,7 @@ Easy Web Application Utilities for Java
 https://www.gdxsoft.com 
 
 ## Github
-https://github.com/gdx1231/emp-script-utils
+https://github.com/gdx1231/emp-script-utils-2
 
 ## Maven
 ```xml
